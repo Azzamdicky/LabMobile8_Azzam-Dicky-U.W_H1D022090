@@ -16,10 +16,10 @@ Shift Baru: F
 
 ## Penjelasan Program
 ### 1. Create (Menambahkan data mahasiswa)
-Fitur ini digunakan untuk menambahkan data mahasiswa baru ke dalam database.
-alur :
-    - Pengguna menekan tombol Tambah Mahasiswa yang akan membuka modal input data.
-    - Di dalam modal, pengguna mengisi `nama` dan `jurusan`, kemudian menekan tombol Tambah Mahasiswa.
+Fitur ini digunakan untuk menambahkan data mahasiswa baru ke dalam database.<br>
+alur :<br>
+    - Pengguna menekan tombol Tambah Mahasiswa yang akan membuka modal input data.<br>
+    - Di dalam modal, pengguna mengisi `nama` dan `jurusan`, kemudian menekan tombol Tambah Mahasiswa.<br>
     - Fungsi `tambahMahasiswa()` di `mahasiswa.page.ts` dipanggil untuk mengirim data ke server melalui API.
 
 ##### mahasiswa.page.html
@@ -45,9 +45,9 @@ echo json_encode($pesan);
 ```
 
 ### 2. Read (Menampilkan data mahasiswa)
-Menampilkan data mahasiswa yang tersimpan di database.
-alur :
-    - Saat halaman diakses, fungsi `ngOnInit()` memanggil fungsi `getMahasiswa()` untuk mengambil data dari server melalui API.
+Menampilkan data mahasiswa yang tersimpan di database.<br>
+alur :<br>
+    - Saat halaman diakses, fungsi `ngOnInit()` memanggil fungsi `getMahasiswa()` untuk mengambil data dari server melalui API.<br>
     - Data yang diterima akan disimpan dalam variabel `dataMahasiswa` dan ditampilkan dalam bentuk card.
 
 ##### mahasiswa.page.ts
@@ -70,10 +70,10 @@ echo json_encode($data);
 ```
 
 ### 3. Update (edit data mahasiswa)
-Mengubah data mahasiswa yang sudah ada.
-alur :
-    - Pengguna menekan tombol Edit pada salah satu data mahasiswa.
-    - Fungsi `openModalEdit()` akan membuka modal edit dengan data mahasiswa yang diambil menggunakan fungsi `ambilMahasiswa()`.
+Mengubah data mahasiswa yang sudah ada.<br>
+alur :<br>
+    - Pengguna menekan tombol Edit pada salah satu data mahasiswa.<br>
+    - Fungsi `openModalEdit()` akan membuka modal edit dengan data mahasiswa yang diambil menggunakan fungsi `ambilMahasiswa()`.<br>
     - Setelah melakukan perubahan, pengguna menekan tombol Edit Mahasiswa yang akan memanggil fungsi `editMahasiswa()` untuk mengirim data perubahan ke server.
 
 ##### mahasiswa.page.ts
@@ -94,10 +94,10 @@ echo json_encode($pesan);
 ```
 
 ### 4. Delete (Hapus data mahasiswa)
-Menghapus data mahasiswa dari database.
-alur :
-    - Pengguna menekan tombol Hapus pada salah satu data mahasiswa.
-    - Fungsi `confirmHapusMahasiswa()` menampilkan konfirmasi sebelum menghapus data.
+Menghapus data mahasiswa dari database.<br>
+alur :<br>
+    - Pengguna menekan tombol Hapus pada salah satu data mahasiswa.<br>
+    - Fungsi `confirmHapusMahasiswa()` menampilkan konfirmasi sebelum menghapus data.<br>
     - Jika pengguna mengonfirmasi, maka fungsi `hapusMahasiswa()` akan dipanggil untuk menghapus data dari server.
 
 ##### mahasiswa.page.ts
